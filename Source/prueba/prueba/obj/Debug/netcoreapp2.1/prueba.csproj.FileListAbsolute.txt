@@ -1,0 +1,11 @@
+C:\Users\libni\source\repos\prueba\prueba\bin\Debug\netcoreapp2.1\prueba.deps.json
+C:\Users\libni\source\repos\prueba\prueba\bin\Debug\netcoreapp2.1\prueba.runtimeconfig.json
+C:\Users\libni\source\repos\prueba\prueba\bin\Debug\netcoreapp2.1\prueba.runtimeconfig.dev.json
+C:\Users\libni\source\repos\prueba\prueba\bin\Debug\netcoreapp2.1\prueba.dll
+C:\Users\libni\source\repos\prueba\prueba\bin\Debug\netcoreapp2.1\prueba.pdb
+C:\Users\libni\source\repos\prueba\prueba\obj\Debug\netcoreapp2.1\prueba.csprojAssemblyReference.cache
+C:\Users\libni\source\repos\prueba\prueba\obj\Debug\netcoreapp2.1\prueba.csproj.CoreCompileInputs.cache
+C:\Users\libni\source\repos\prueba\prueba\obj\Debug\netcoreapp2.1\prueba.AssemblyInfoInputs.cache
+C:\Users\libni\source\repos\prueba\prueba\obj\Debug\netcoreapp2.1\prueba.AssemblyInfo.cs
+C:\Users\libni\source\repos\prueba\prueba\obj\Debug\netcoreapp2.1\prueba.dll
+C:\Users\libni\source\repos\prueba\prueba\obj\Debug\netcoreapp2.1\prueba.pdb
