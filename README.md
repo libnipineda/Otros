@@ -1,6 +1,6 @@
 # Otros
 Coleccion de proyectos
-## Carpeta1
+## Carpeta1->NeatBeansProject
 1. Tarea3
 2. Lista
 3. [LFP]Practica
