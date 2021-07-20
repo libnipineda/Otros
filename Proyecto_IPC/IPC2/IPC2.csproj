@@ -1,0 +1,654 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{665AB307-988A-4E38-9098-0C5795A34B80}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPC2</RootNamespace>
+    <AssemblyName>IPC2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrador\assets\css\font-awesome.min.css" />
+    <Content Include="Administrador\assets\css\images\arrow.svg" />
+    <Content Include="Administrador\assets\css\images\bars.svg" />
+    <Content Include="Administrador\assets\css\images\close.svg" />
+    <Content Include="Administrador\assets\css\main.css" />
+    <Content Include="Administrador\assets\css\noscript.css" />
+    <Content Include="Administrador\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Administrador\assets\js\breakpoints.min.js" />
+    <Content Include="Administrador\assets\js\browser.min.js" />
+    <Content Include="Administrador\assets\js\jquery.min.js" />
+    <Content Include="Administrador\assets\js\jquery.scrollex.min.js" />
+    <Content Include="Administrador\assets\js\jquery.scrolly.min.js" />
+    <Content Include="Administrador\assets\js\main.js" />
+    <Content Include="Administrador\assets\js\util.js" />
+    <Content Include="Administrador\CrearU.aspx" />
+    <Content Include="Administrador\Home.aspx" />
+    <Content Include="Administrador\images\banner.jpg" />
+    <Content Include="Administrador\images\pic01.jpg" />
+    <Content Include="Administrador\images\pic02.jpg" />
+    <Content Include="Administrador\images\pic03.jpg" />
+    <Content Include="Administrador\images\pic04.jpg" />
+    <Content Include="Administrador\images\pic05.jpg" />
+    <Content Include="Administrador\MEUsuario.aspx" />
+    <Content Include="Administrador\Noticia.aspx" />
+    <Content Include="Administrador\Reporte1.aspx" />
+    <Content Include="Administrador\Reporte2.aspx" />
+    <Content Include="Administrador\Reporte3.aspx" />
+    <Content Include="Administrador\Reporte4.aspx" />
+    <Content Include="Agente Turismo\AFotografia.aspx" />
+    <Content Include="Agente Turismo\assets\css\font-awesome.min.css" />
+    <Content Include="Agente Turismo\assets\css\images\arrow.svg" />
+    <Content Include="Agente Turismo\assets\css\images\bars.svg" />
+    <Content Include="Agente Turismo\assets\css\images\close.svg" />
+    <Content Include="Agente Turismo\assets\css\main.css" />
+    <Content Include="Agente Turismo\assets\css\noscript.css" />
+    <Content Include="Agente Turismo\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Agente Turismo\assets\js\breakpoints.min.js" />
+    <Content Include="Agente Turismo\assets\js\browser.min.js" />
+    <Content Include="Agente Turismo\assets\js\jquery.min.js" />
+    <Content Include="Agente Turismo\assets\js\jquery.scrollex.min.js" />
+    <Content Include="Agente Turismo\assets\js\jquery.scrolly.min.js" />
+    <Content Include="Agente Turismo\assets\js\main.js" />
+    <Content Include="Agente Turismo\assets\js\util.js" />
+    <Content Include="Agente Turismo\GEvaluacion.aspx" />
+    <Content Include="Agente Turismo\GRecibo.aspx" />
+    <Content Include="Agente Turismo\HomeA.aspx" />
+    <Content Include="Agente Turismo\images\banner.jpg" />
+    <Content Include="Agente Turismo\images\pic01.jpg" />
+    <Content Include="Agente Turismo\images\pic02.jpg" />
+    <Content Include="Agente Turismo\images\pic03.jpg" />
+    <Content Include="Agente Turismo\images\pic04.jpg" />
+    <Content Include="Agente Turismo\images\pic05.jpg" />
+    <Content Include="Agente Turismo\MSitioT.aspx" />
+    <Content Include="Agente Turismo\Reporte1.aspx" />
+    <Content Include="Agente Turismo\Reporte2.aspx" />
+    <Content Include="Agente Turismo\Reporte3.aspx" />
+    <Content Include="Agente Turismo\Reporte4.aspx" />
+    <Content Include="Agente Turismo\RSitioT.aspx" />
+    <Content Include="Agente Turismo\VEmpresa.aspx" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\images\arrow.svg" />
+    <Content Include="assets\css\images\bars.svg" />
+    <Content Include="assets\css\images\close.svg" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\css\noscript.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\js\breakpoints.min.js" />
+    <Content Include="assets\js\browser.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.scrollex.min.js" />
+    <Content Include="assets\js\jquery.scrolly.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\util.js" />
+    <Content Include="CrearU.aspx" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\pic01.jpg" />
+    <Content Include="images\pic02.jpg" />
+    <Content Include="images\pic03.jpg" />
+    <Content Include="images\pic04.jpg" />
+    <Content Include="images\pic05.jpg" />
+    <Content Include="index.html" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="REmpresa.aspx" />
+    <Content Include="Servicio.aspx" />
+    <Content Include="Tecnico\assets\css\font-awesome.min.css" />
+    <Content Include="Tecnico\assets\css\images\arrow.svg" />
+    <Content Include="Tecnico\assets\css\images\bars.svg" />
+    <Content Include="Tecnico\assets\css\images\close.svg" />
+    <Content Include="Tecnico\assets\css\main.css" />
+    <Content Include="Tecnico\assets\css\noscript.css" />
+    <Content Include="Tecnico\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Tecnico\assets\js\breakpoints.min.js" />
+    <Content Include="Tecnico\assets\js\browser.min.js" />
+    <Content Include="Tecnico\assets\js\jquery.min.js" />
+    <Content Include="Tecnico\assets\js\jquery.scrollex.min.js" />
+    <Content Include="Tecnico\assets\js\jquery.scrolly.min.js" />
+    <Content Include="Tecnico\assets\js\main.js" />
+    <Content Include="Tecnico\assets\js\util.js" />
+    <Content Include="Tecnico\CRecorrido.aspx" />
+    <Content Include="Tecnico\GRevision.aspx" />
+    <Content Include="Tecnico\HomeT.aspx" />
+    <Content Include="Tecnico\images\banner.jpg" />
+    <Content Include="Tecnico\images\pic01.jpg" />
+    <Content Include="Tecnico\images\pic02.jpg" />
+    <Content Include="Tecnico\images\pic03.jpg" />
+    <Content Include="Tecnico\images\pic04.jpg" />
+    <Content Include="Tecnico\images\pic05.jpg" />
+    <Content Include="Tecnico\NServicio.aspx" />
+    <Content Include="Tecnico\REvaluacion.aspx" />
+    <Content Include="Tecnico\VRecorrido.aspx" />
+    <Content Include="Usuario\assets\css\font-awesome.min.css" />
+    <Content Include="Usuario\assets\css\images\arrow.svg" />
+    <Content Include="Usuario\assets\css\images\bars.svg" />
+    <Content Include="Usuario\assets\css\images\close.svg" />
+    <Content Include="Usuario\assets\css\main.css" />
+    <Content Include="Usuario\assets\css\noscript.css" />
+    <Content Include="Usuario\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Usuario\assets\js\breakpoints.min.js" />
+    <Content Include="Usuario\assets\js\browser.min.js" />
+    <Content Include="Usuario\assets\js\jquery.min.js" />
+    <Content Include="Usuario\assets\js\jquery.scrollex.min.js" />
+    <Content Include="Usuario\assets\js\jquery.scrolly.min.js" />
+    <Content Include="Usuario\assets\js\main.js" />
+    <Content Include="Usuario\assets\js\util.js" />
+    <Content Include="Usuario\Busqueda.aspx" />
+    <Content Include="Usuario\Consulta.aspx" />
+    <Content Include="Usuario\HomeU.aspx" />
+    <Content Include="Usuario\images\banner.jpg" />
+    <Content Include="Usuario\images\pic01.jpg" />
+    <Content Include="Usuario\images\pic02.jpg" />
+    <Content Include="Usuario\images\pic03.jpg" />
+    <Content Include="Usuario\images\pic04.jpg" />
+    <Content Include="Usuario\images\pic05.jpg" />
+    <Content Include="Usuario\Nuevo.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador\CrearU.aspx.cs">
+      <DependentUpon>CrearU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\CrearU.aspx.designer.cs">
+      <DependentUpon>CrearU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Noticia.aspx.cs">
+      <DependentUpon>Noticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Noticia.aspx.designer.cs">
+      <DependentUpon>Noticia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Reporte1.aspx.cs">
+      <DependentUpon>Reporte1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Reporte1.aspx.designer.cs">
+      <DependentUpon>Reporte1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Reporte2.aspx.cs">
+      <DependentUpon>Reporte2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Reporte2.aspx.designer.cs">
+      <DependentUpon>Reporte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Reporte3.aspx.cs">
+      <DependentUpon>Reporte3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Reporte3.aspx.designer.cs">
+      <DependentUpon>Reporte3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Reporte4.aspx.cs">
+      <DependentUpon>Reporte4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Reporte4.aspx.designer.cs">
+      <DependentUpon>Reporte4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte1.aspx.cs">
+      <DependentUpon>Reporte1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte1.aspx.designer.cs">
+      <DependentUpon>Reporte1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte2.aspx.cs">
+      <DependentUpon>Reporte2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte2.aspx.designer.cs">
+      <DependentUpon>Reporte2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte3.aspx.cs">
+      <DependentUpon>Reporte3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte3.aspx.designer.cs">
+      <DependentUpon>Reporte3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte4.aspx.cs">
+      <DependentUpon>Reporte4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\Reporte4.aspx.designer.cs">
+      <DependentUpon>Reporte4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Administrador\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\MEUsuario.aspx.cs">
+      <DependentUpon>MEUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador\MEUsuario.aspx.designer.cs">
+      <DependentUpon>MEUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\AFotografia.aspx.cs">
+      <DependentUpon>AFotografia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\AFotografia.aspx.designer.cs">
+      <DependentUpon>AFotografia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\GEvaluacion.aspx.cs">
+      <DependentUpon>GEvaluacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\GEvaluacion.aspx.designer.cs">
+      <DependentUpon>GEvaluacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\GRecibo.aspx.cs">
+      <DependentUpon>GRecibo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\GRecibo.aspx.designer.cs">
+      <DependentUpon>GRecibo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\HomeA.aspx.cs">
+      <DependentUpon>HomeA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\HomeA.aspx.designer.cs">
+      <DependentUpon>HomeA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\MSitioT.aspx.cs">
+      <DependentUpon>MSitioT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\MSitioT.aspx.designer.cs">
+      <DependentUpon>MSitioT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\RSitioT.aspx.cs">
+      <DependentUpon>RSitioT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\RSitioT.aspx.designer.cs">
+      <DependentUpon>RSitioT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agente Turismo\VEmpresa.aspx.cs">
+      <DependentUpon>VEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agente Turismo\VEmpresa.aspx.designer.cs">
+      <DependentUpon>VEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base De Datos\Data.cs" />
+    <Compile Include="CrearU.aspx.cs">
+      <DependentUpon>CrearU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearU.aspx.designer.cs">
+      <DependentUpon>CrearU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REmpresa.aspx.cs">
+      <DependentUpon>REmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="REmpresa.aspx.designer.cs">
+      <DependentUpon>REmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Empresa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Empresa.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ServicioHotel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServicioHotel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\VisitasT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisitasT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Servicio.aspx.cs">
+      <DependentUpon>Servicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Servicio.aspx.designer.cs">
+      <DependentUpon>Servicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnico\CRecorrido.aspx.cs">
+      <DependentUpon>CRecorrido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnico\CRecorrido.aspx.designer.cs">
+      <DependentUpon>CRecorrido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnico\GRevision.aspx.cs">
+      <DependentUpon>GRevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnico\GRevision.aspx.designer.cs">
+      <DependentUpon>GRevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnico\HomeT.aspx.cs">
+      <DependentUpon>HomeT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnico\HomeT.aspx.designer.cs">
+      <DependentUpon>HomeT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnico\NServicio.aspx.cs">
+      <DependentUpon>NServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnico\NServicio.aspx.designer.cs">
+      <DependentUpon>NServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnico\REvaluacion.aspx.cs">
+      <DependentUpon>REvaluacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnico\REvaluacion.aspx.designer.cs">
+      <DependentUpon>REvaluacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnico\VRecorrido.aspx.cs">
+      <DependentUpon>VRecorrido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnico\VRecorrido.aspx.designer.cs">
+      <DependentUpon>VRecorrido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UAdmin.Master.cs">
+      <DependentUpon>UAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UAdmin.Master.designer.cs">
+      <DependentUpon>UAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UAgenteMaster.Master.cs">
+      <DependentUpon>UAgenteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UAgenteMaster.Master.designer.cs">
+      <DependentUpon>UAgenteMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Busqueda.aspx.cs">
+      <DependentUpon>Busqueda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\Busqueda.aspx.designer.cs">
+      <DependentUpon>Busqueda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\HomeU.aspx.cs">
+      <DependentUpon>HomeU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\HomeU.aspx.designer.cs">
+      <DependentUpon>HomeU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Nuevo.aspx.cs">
+      <DependentUpon>Nuevo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuario\Nuevo.aspx.designer.cs">
+      <DependentUpon>Nuevo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UTecnico.Master.cs">
+      <DependentUpon>UTecnico.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UTecnico.Master.designer.cs">
+      <DependentUpon>UTecnico.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\sass\libs\_breakpoints.scss" />
+    <Content Include="assets\sass\libs\_functions.scss" />
+    <Content Include="assets\sass\libs\_html-grid.scss" />
+    <Content Include="assets\sass\libs\_mixins.scss" />
+    <Content Include="assets\sass\libs\_vars.scss" />
+    <Content Include="assets\sass\libs\_vendor.scss" />
+    <Content Include="assets\sass\main.scss" />
+    <Content Include="assets\sass\noscript.scss" />
+    <Content Include="Administrador\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Administrador\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Administrador\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Administrador\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Administrador\assets\fonts\FontAwesome.otf" />
+    <Content Include="Administrador\assets\sass\libs\_breakpoints.scss" />
+    <Content Include="Administrador\assets\sass\libs\_functions.scss" />
+    <Content Include="Administrador\assets\sass\libs\_html-grid.scss" />
+    <Content Include="Administrador\assets\sass\libs\_mixins.scss" />
+    <Content Include="Administrador\assets\sass\libs\_vars.scss" />
+    <Content Include="Administrador\assets\sass\libs\_vendor.scss" />
+    <Content Include="Administrador\assets\sass\main.scss" />
+    <Content Include="Administrador\assets\sass\noscript.scss" />
+    <Content Include="Agente Turismo\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Agente Turismo\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Agente Turismo\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Agente Turismo\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Agente Turismo\assets\fonts\FontAwesome.otf" />
+    <Content Include="Agente Turismo\assets\sass\libs\_breakpoints.scss" />
+    <Content Include="Agente Turismo\assets\sass\libs\_functions.scss" />
+    <Content Include="Agente Turismo\assets\sass\libs\_html-grid.scss" />
+    <Content Include="Agente Turismo\assets\sass\libs\_mixins.scss" />
+    <Content Include="Agente Turismo\assets\sass\libs\_vars.scss" />
+    <Content Include="Agente Turismo\assets\sass\libs\_vendor.scss" />
+    <Content Include="Agente Turismo\assets\sass\main.scss" />
+    <Content Include="Agente Turismo\assets\sass\noscript.scss" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="UAdmin.Master" />
+    <Content Include="Tecnico\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Tecnico\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Tecnico\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Tecnico\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Tecnico\assets\fonts\FontAwesome.otf" />
+    <Content Include="Tecnico\assets\sass\libs\_breakpoints.scss" />
+    <Content Include="Tecnico\assets\sass\libs\_functions.scss" />
+    <Content Include="Tecnico\assets\sass\libs\_html-grid.scss" />
+    <Content Include="Tecnico\assets\sass\libs\_mixins.scss" />
+    <Content Include="Tecnico\assets\sass\libs\_vars.scss" />
+    <Content Include="Tecnico\assets\sass\libs\_vendor.scss" />
+    <Content Include="Tecnico\assets\sass\main.scss" />
+    <Content Include="Tecnico\assets\sass\noscript.scss" />
+    <Content Include="UAgenteMaster.Master" />
+    <Content Include="UTecnico.Master" />
+    <Content Include="Usuario\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Usuario\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Usuario\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Usuario\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Usuario\assets\fonts\FontAwesome.otf" />
+    <Content Include="Usuario\assets\sass\libs\_breakpoints.scss" />
+    <Content Include="Usuario\assets\sass\libs\_functions.scss" />
+    <Content Include="Usuario\assets\sass\libs\_html-grid.scss" />
+    <Content Include="Usuario\assets\sass\libs\_mixins.scss" />
+    <Content Include="Usuario\assets\sass\libs\_vars.scss" />
+    <Content Include="Usuario\assets\sass\libs\_vendor.scss" />
+    <Content Include="Usuario\assets\sass\main.scss" />
+    <Content Include="Usuario\assets\sass\noscript.scss" />
+    <Content Include="User.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Subidos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Empresa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Empresa.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ServicioHotel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ServicioHotel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\VisitasT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VisitasT.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63532</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63532/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
