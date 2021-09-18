@@ -1,0 +1,44 @@
+CC-001,1,P,Sillas con apoyo/brazos,60,75,10000,0
+CC-002,1,P,Bancos/Sillas sin respaldo,50,62.5,20000,1
+MM-001,2,P,Mesas Redodas,200,250,8000,0
+CC-001,1,P,Sillas con apoyo/brazos,60,75,10000,0
+CC-004,1,M,Sillas con apoyo/brazos,80,100,15000,1
+UU-003,3,P,Cuchas estandar paquete de 25,12,15,50000,0
+UU-004,3,M,Cuchara sopera,15,18.75,30000,3
+UU-005,3,W,"Cucharas normaleas, soperas",16,20,20000,4
+UU-006,4,P,Tenedores estandar  paquete de 25,12,15,50000,0
+UU-007,4,M,Tenedores normales/standar,15,18.75,30000,3
+UU-008,4,W,Tenedores Normales/estandar,16,20,20000,4
+SS-001,5,P,Servilletas de Papel Reciclable paquete de 50,15,18.75,8000,0
+SS-002,5,P,Servilletas de Tela paquete de 25,100,125,50,2
+SS-003,5,P,Servilletas de Tela paquete de 25,100,125,50,0
+CC-003,1,P,Sillas con apoyo/brazos,60,75,10000,1
+CC-005,1,P,Bancos/Sillas sin respaldo,50,62.5,20000,0
+MM-002,2,P,Mesas Redodas,200,250,8000,1
+CC-006,1,M,Sillas con apoyo/brazos,100,125,8000,3
+CC-007,1,M,Bancos/Sillas sin respaldo,80,100,10000,3
+MM-003,2,M,Mesas Redodas,500,625,8000,3
+MM-004,2,M,Mesas Cuadradas 4 personas,500,625,8000,3
+MM-005,2,M,Mesas Rectangulares /8 personas,750,937.5,7000,3
+PP-001,7,P,Plato ondo desechable paquete de 25,18,22.5,10000,0
+PP-006,7,P,Plato ondo desechable paquete de 25,18,22.5,10000,1
+PP-002,7,C,Plato ondo de ceramica,20,25,7000,0
+PP-003,7,C,Plato ondo de ceramica,20,25,7000,1
+PP-004,7,C,Plato ondo de ceramica,20,25,7000,2
+PP-005,7,C,Plato ondo de ceramica,20,25,7000,3
+PP-006,8,P,Plato Plano desechable paquete de 25,18,22.5,10000,0
+PP-007,8,P,Plato Plano desechable paquete de 25,18,22.5,10000,1
+PP-008,8,C,Plato Plano de ceramica,20,25,7000,0
+PP-009,8,C,Plato Plano de ceramica,20,25,7000,1
+PP-010,8,C,Plato Plano de ceramica,20,25,7000,2
+PP-011,8,C,Plato Plano de ceramica,20,25,7000,3
+PP-012,9,P,Plato Pastelero desechable  paquete de 25,18,22.5,10000,0
+PP-013,9,P,Plato Pastelero desechable paquete de 25,18,22.5,10000,1
+PP-014,9,C,Plato Pastelero de ceramica,20,25,7000,0
+PP-015,9,C,Plato Pastelero de ceramica,20,25,7000,1
+PP-016,9,C,Plato Pastelero de ceramica,20,25,7000,2
+PP-017,9,C,Plato Pastelero de ceramica,20,25,7000,3
+MM-002,2,P,Mesas Redodas,200,250,8000,1
+CC-006,1,M,Sillas con apoyo/brazos,100,125,8000,3
+CC-007,1,M,Bancos/Sillas sin respaldo,80,100,10000,3
+MM-003,2,M,Mesas Redodas,500,625,8000,3
